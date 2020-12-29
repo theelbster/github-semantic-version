@@ -237,7 +237,13 @@ export default class Version {
       const { user, repo } = Utils.getUserRepo();
       const { protocol = 'https', host = 'github.com' } = this.config.github;
       const token = '${GH_TOKEN}';
-      const origin = `${protocol}://${user}:${token}@${host}/${user}/${repo}.git`;
+      if (process.env.GH_USER) {
+        var gh_user = '${process.env.GH_USER}';
+      } else {
+        var gh_user = '${user}';
+      }
+
+      const origin = `${protocol}://${gh_user}:${token}@${host}/${user}/${repo}.git`;
 
       debug.info(`Explicitly setting git origin to: ${origin}`);
       Utils.exec(`git remote set-url origin ${origin}`)
