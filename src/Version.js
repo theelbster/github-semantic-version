@@ -228,7 +228,7 @@ export default class Version {
 
   async push() {
     if (this.options.dryRun) {
-      return debug.warn(`[DRY RUN] Pushing changes to master branch`);
+      return debug.warn(`[DRY RUN] Pushing changes to ${this.options.branch} branch`);
     }
 
     const spinner = ora("Pushing changes to Github").start();
@@ -243,7 +243,7 @@ export default class Version {
       Utils.exec(`git remote set-url origin ${origin}`)
     }
 
-    Utils.exec("git push origin master --tags", { stdio: "ignore" });
+    Utils.exec("git push origin " + this.options.branch + " --tags", { stdio: "ignore" });
 
     spinner.succeed();
   }
