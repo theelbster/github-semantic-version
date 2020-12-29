@@ -238,9 +238,9 @@ export default class Version {
       const { protocol = 'https', host = 'github.com' } = this.config.github;
       const token = '${GH_TOKEN}';
       if (process.env.GH_USER) {
-        var gh_user = '${process.env.GH_USER}';
+        var gh_user = process.env.GH_USER;
       } else {
-        var gh_user = '${user}';
+        var gh_user = user;
       }
 
       const origin = `${protocol}://${gh_user}:${token}@${host}/${user}/${repo}.git`;
