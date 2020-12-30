@@ -116,10 +116,6 @@ deploy:
 
 As automation related to your code and publishing to the world can sometimes be scary, `github-semantic-version` operates with an _additive functionality_ philosophy. 
 
-To indicate you are in a CI environment, the CI envvar must be defined. It doesn't matter what the value is.
-
-To supply a specific github user and token override, then the GH_USER and GH_TOKEN envvars must be assigned.
-
 #### Options
 
 `github-semantic-version`

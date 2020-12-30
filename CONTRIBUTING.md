@@ -12,3 +12,9 @@ This repository is a fork of the [`github-semantic-version` module](https://gith
 1. Updated some dependencies to more current versions.
 2. Added support for overriding the inherited Github user in case CI uses a different name.
 3. Pushing to a branch is no longer hardcoded to master branch.
+
+## Quick tips for using with CI, such as jenkins.
+
+1. Assign the "CI" environment variable. It simply needs to exist.
+2. Assign your CI user to "GH_USER". If this is unassigned, the user will be inherited from the Github repo.
+3. Assign your personal access token to "GH_TOKEN".
