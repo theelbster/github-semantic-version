@@ -5,7 +5,7 @@ This repository is a fork of the [`github-semantic-version` module](https://gith
 ## Installation
 
 1. To install this fork via npm: npm install --save-dev @theelbster/github-semantic-version
-2. To install the original package via npm, follow the directions in the README.md.
+2. To install the original package via npm, follow the directions in the [`README.md`].
 
 ## High level differences
 
@@ -13,7 +13,7 @@ This repository is a fork of the [`github-semantic-version` module](https://gith
 2. Added support for overriding the inherited Github user in case CI uses a different name.
 3. Pushing to a branch is no longer hardcoded to master branch.
 
-## Quick tips for using with CI, such as jenkins.
+## Quick tips for using with CI such as Jenkins.
 
 1. Assign the "CI" environment variable. It simply needs to exist.
 2. Assign your CI user to "GH_USER". If this is unassigned, the user will be inherited from the Github repo.
