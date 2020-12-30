@@ -5,7 +5,7 @@ This repository is a fork of the [`github-semantic-version` module](https://gith
 ## Installation
 
 1. To install this fork via npm: npm install --save-dev @theelbster/github-semantic-version
-2. To install the original package via npm, follow the directions in the [README.md](https://github.com/theelbster/github-semantic-version/README.md).
+2. To install the original package via npm, follow the directions in the [README.md](https://github.com/theelbster/github-semantic-version/blob/main/README.md).
 
 ## High level differences
 
