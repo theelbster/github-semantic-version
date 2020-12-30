@@ -1,7 +1,7 @@
 {
-  "name": "github-semantic-version",
-  "version": "7.6.0",
-  "description": "Automated semantic version releases powered by Github Issues.",
+  "name": "@theelbster/github-semantic-version",
+  "version": "7.6.1",
+  "description": "Automated semantic version releases powered by Github Issues, forked from github.com/ericclemmons/github-semantic-version.",
   "bin": {
     "github-semantic-version": "dist/cli.js",
     "gsv": "dist/cli.js"
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ericclemmons/github-semantic-version.git"
+    "url": "git+https://github.com/theelbster/github-semantic-version.git"
   },
   "keywords": [
     "semver",
@@ -51,7 +51,7 @@
     "chalk": "^2.3.2",
     "debug": "^3.1.0",
     "fs-extra": "^5.0.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.20",
     "meow": "^4.0.0",
     "moment": "^2.21.0",
     "ora": "^2.0.0",
@@ -66,5 +66,12 @@
     "expect": "^22.4.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.2"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
