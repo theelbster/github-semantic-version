@@ -11,4 +11,4 @@ This repository is a fork of the [`github-semantic-version` module](https://gith
 
 1. Updated some dependencies to more current versions.
 2. Added support for overriding the inherited Github user in case CI uses a different name.
-3. Pushing to a branch no longer hardcoded to master branch.
+3. Pushing to a branch is no longer hardcoded to master branch.
