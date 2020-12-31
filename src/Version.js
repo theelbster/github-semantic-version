@@ -249,6 +249,10 @@ export default class Version {
       Utils.exec(`git remote set-url origin ${origin}`)
     }
 
+    // First rebase in case there are changes to pull in.
+    Utils.exec("git pull --rebase origin " + this.options.branch, { stdio: "ignore" });
+
+    // Push everything.
     Utils.exec("git push origin " + this.options.branch + " --tags", { stdio: "ignore" });
 
     spinner.succeed();
