@@ -1,6 +1,6 @@
 {
   "name": "@theelbster/github-semantic-version",
-  "version": "7.6.3",
+  "version": "7.6.4",
   "description": "Automated semantic version releases powered by Github Issues, forked from github.com/ericclemmons/github-semantic-version.",
   "bin": {
     "github-semantic-version": "dist/cli.js",
