@@ -13,6 +13,8 @@
 
 ### 1. Install
 
+<mark>For changes specific to this fork, visit [CONTRIBUTING.md](https://github.com/theelbster/github-semantic-version/blob/main/CONTRIBUTING.md)</mark>
+
 ```shell
 $ npm install --save-dev github-semantic-version
 ```
