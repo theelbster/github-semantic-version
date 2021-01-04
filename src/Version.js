@@ -250,10 +250,10 @@ export default class Version {
     }
 
     // First rebase in case there are changes to pull in.
-    Utils.exec("git pull --rebase origin " + this.options.branch, { stdio: "ignore" });
+    Utils.exec("git pull --rebase origin " + this.options.branch, (error, stdout, stderr) => { });
 
     // Push everything.
-    Utils.exec("git push origin " + this.options.branch + " --tags", { stdio: "ignore" });
+    Utils.exec("git push origin " + this.options.branch + " --tags", (error, stdout, stderr) => { });
 
     spinner.succeed();
   }
