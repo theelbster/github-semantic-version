@@ -1,6 +1,6 @@
 {
   "name": "@theelbster/github-semantic-version",
-  "version": "7.6.4",
+  "version": "7.6.5",
   "description": "Automated semantic version releases powered by Github Issues, forked from github.com/ericclemmons/github-semantic-version.",
   "bin": {
     "github-semantic-version": "dist/cli.js",
@@ -41,9 +41,9 @@
   "author": "Eric Clemmons <eric@smarterspam.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ericclemmons/github-semantic-version/issues"
+    "url": "https://github.com/theelbster/github-semantic-version/issues"
   },
-  "homepage": "https://github.com/ericclemmons/github-semantic-version#readme",
+  "homepage": "https://github.com/theelbster/github-semantic-version#readme",
   "dependencies": {
     "@octokit/rest": "^15.1.9",
     "babel": "^6.23.0",
